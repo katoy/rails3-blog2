@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+1_1:
+  commenter: MyString
+  body: MyText 1_1
+  post: one
+
+1_2:
+  commenter: MyString
+  body: MyText 1_2
+  post: one
+
+2_1:
+  commenter: MyString
+  body: MyText 2_1
+  post: two
