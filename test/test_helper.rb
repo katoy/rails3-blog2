@@ -3,9 +3,14 @@ require 'simplecov'
 require 'simplecov-rcov'
 
 Coveralls.wear!
-SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
-SimpleCov.start 'rails'
 
+#SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+#SimpleCov.start 'rails'
+
+SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.start do
+  add_filter 'app/secrets'
+end
 
 ENV["RAILS_ENV"] = "test"
 require File.expand_path('../../config/environment', __FILE__)
