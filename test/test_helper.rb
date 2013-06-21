@@ -7,10 +7,19 @@ Coveralls.wear!
 #SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
 #SimpleCov.start 'rails'
 
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
-SimpleCov.start do
-  add_filter 'app/secrets'
-end
+#SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+#SimpleCov.start do
+#  add_filter 'app/secrets'
+#end
+
+# simplecov, rcov, coderails の３東リの書式のレポートを生成する。
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  SimpleCov::Formatter::RcovFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start
+
 
 ENV["RAILS_ENV"] = "test"
 require File.expand_path('../../config/environment', __FILE__)
