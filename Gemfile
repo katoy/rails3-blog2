@@ -39,7 +39,10 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'simplecov', :require => false, :group => :test
+group :development do
+  gem 'simplecov', :require => false
+  gem 'simplecov-rcov', :require => false
+end
 
 group :development do
   # エラー画面をわかりやすく整形してくれる
