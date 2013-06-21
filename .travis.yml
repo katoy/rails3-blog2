@@ -4,6 +4,6 @@ rvm:
 env:
   - DB=sqlite
 bundler_args: "--without development"
-script: true
-before_script:
+script:
   - RAILS_ENV=test bundle exec rake db:create db:migrate
+  - RAILS_ENV=test bundle exec rake test
