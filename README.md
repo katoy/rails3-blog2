@@ -1,5 +1,5 @@
 
-tarvis : [![Build Status](https://secure.travis-ci.org/katoy/rails3-blog2.png)](http://travis-ci.org/katoy/rails3-blog2)  
+tarvis : [![Build Status](https://travis-ci.org/katoy/rails3-blog2.png?branch=master)](https://travis-ci.org/katoy/rails3-blog2)  
 
 [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた物です。
 

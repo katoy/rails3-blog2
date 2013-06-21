@@ -1,7 +1,6 @@
-anguage: ruby
+language: ruby
+script: "bundle exec rake db:drop db:create db:migrate"
 rvm:
   - 1.9.3
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx-19mode
 env:
   - DB=sqlite
