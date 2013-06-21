@@ -1,5 +1,8 @@
 
-tarvis : [![Build Status](https://travis-ci.org/katoy/rails3-blog2.png?branch=master)](https://travis-ci.org/katoy/rails3-blog2)  
+[![Build Status](https://travis-ci.org/katoy/rails3-blog2.png?branch=master)](https://travis-ci.org/katoy/rails3-blog2)
+[![Dependency Status](https://gemnasium.com/katoy/rails3-blog2.png)](https://gemnasium.com/katoy/rails3-blog2)
+[![Coverage Status](https://coveralls.io/repos/katoy/rails3-blog2/badge.png)](https://coveralls.io/r/katoy/rails3-blog2)
+
 
 [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた物です。
 

@@ -45,6 +45,9 @@ group :test do
 end
 
 group :development do
+  # WEBrick でなく thin を使う
+  gem 'thin'
+
   # エラー画面をわかりやすく整形してくれる
   gem 'better_errors'
   gem 'pry-rails'
@@ -56,3 +59,5 @@ group :development do
   # M + 1 問題のチェック
   gem 'bullet', :group => :development
 end
+
+gem 'coveralls', require: false
