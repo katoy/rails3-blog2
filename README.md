@@ -1,5 +1,7 @@
 
-[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なって見た物です。
+tarvis : [![Build Status](https://secure.travis-ci.org/katoy/rails3-blog2.png)](http://travis-ci.org/katoy/rails3-blog2)  
+
+[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた物です。
 
 さらに better_error の導入、コードカバレッジの導入、 N + 1 問題のチェックの導入をしています。
 
