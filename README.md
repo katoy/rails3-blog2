@@ -6,7 +6,7 @@
 
 [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた結果です。
 
-追加時効
+追加事項
 =======
 
 * /posts では、 TAG の数、コメントの数も表示するようにしています。
