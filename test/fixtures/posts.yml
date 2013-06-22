@@ -1,11 +1,29 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
+post_1:
   name: MyString
   title: MyString 1
   content: MyText 1
+  comments_count: 1
+  tags_count: 3
 
-two:
+post_2:
   name: MyString
   title: MyString 2
   content: MyText 2
+  comments_count: 2
+  tags_count: 1
+
+post_3:
+  name: MyString
+  title: MyString 3
+  content: MyText 3
+  comments_count: 3
+  tags_count: 1
+
+post_4:
+  name: MyString
+  title: MyString 4
+  content: MyText 4
+  comments_count: 0
+  tags_count: 1

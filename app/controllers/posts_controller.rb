@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+
+  # http_basic_authenticate_with :name => 'dhh', :password => 'secret', :except => [:index, :show]
+
   # GET /posts
   # GET /posts.json
   def index
@@ -14,6 +17,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    # @post = Post.includes([:comments, :tags]).find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

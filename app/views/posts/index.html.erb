@@ -4,6 +4,8 @@
   <tr>
     <th>Name</th>
     <th>Title</th>
+    <th>#tags</th>
+    <th>#comments</th>
     <th>Content</th>
     <th></th>
     <th></th>
@@ -14,7 +16,11 @@
   <tr>
     <td><%= post.name %></td>
     <td><%= post.title %></td>
+    <td align="right"><%= post.tags.size %></td>
+    <td align="right"><%= post.comments.size %></td>
     <td><%= post.content %></td>
+
+
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>

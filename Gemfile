@@ -58,6 +58,10 @@ group :development do
 
   # M + 1 問題のチェック
   gem 'bullet', :group => :development
+
+  # perormance 計測
+  gem 'rack-mini-profiler'
+
 end
 
 gem 'coveralls', require: false

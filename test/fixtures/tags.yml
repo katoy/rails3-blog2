@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+t_1:
+  name: TAG_1
+  post: post_1
+
+t_2:
+  name: TAG_2
+  post: post_2
+
+t_3:
+  name: TAG_3
+  post: post_3
+
+t_4:
+  name: TAG_4
+  post: post_4
+
+t_1_2:
+  name: TAG_2
+  post: post_1
+
+t_1_3:
+  name: TAG_3
+  post: post_1

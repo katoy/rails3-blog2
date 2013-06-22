@@ -4,9 +4,25 @@
 [![Coverage Status](https://coveralls.io/repos/katoy/rails3-blog2/badge.png)](https://coveralls.io/r/katoy/rails3-blog2)
 
 
-[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた物です。
+[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた結果です。
 
-さらに better_error の導入、コードカバレッジの導入、 N + 1 問題のチェックの導入をしています。
+追加時効
+=======
+
+* /posts では、 TAG の数、コメントの数も表示するようにしています。
+この場合、単純に coding したのでは、N + 1 問題が発生します。(各 post 毎に tag, comment 検索の SQL が発行されてしまう。)  
+counter_cache を使って対処しています。  
+その結果、 /posts の表示は 1 つの SQL 発行だけで済んでいます。
+
+* plugin の追加
+better_error の導入、コードカバレッジの導入、 N + 1 問題のチェックの導入, rack_mini_profile の導入  
+をしています。
+
+* mini_profiler について
+http://localhost:3000/?pp=help のように　?pp=help で mini_profile のオプション指定を調べることができます。  
+また、 config/initializers/mini_profiler.rb で動作設定が可能です。  
+キー操作 ALT P で表示 on/off できます。  
+
 
 TODO:
 =====
@@ -29,6 +45,9 @@ See
 
 - http://www.ideaxidea.com/archives/2010/11/gitignore.html  
 　.gitignoreの設定に迷ったらgithubへどうぞ
+
+- http://railscasts.com/episodes/372-bullet?language=ja&view=asciicast
+　Bullet を使ってRailsアプリケーションの最適化をおこないます。
 
 
 
