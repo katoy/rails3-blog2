@@ -5,8 +5,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
-
+    # @posts = Post.all
+    @posts = Post.includes(:tags).all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
@@ -16,8 +16,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.find(params[:id])
-    # @post = Post.includes([:comments, :tags]).find(params[:id])
+    # @post = Post.find(params[:id])
+    @post = Post.includes([:comments, :tags]).find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
