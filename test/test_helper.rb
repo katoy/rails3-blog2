@@ -12,7 +12,7 @@ Coveralls.wear!
 #  add_filter 'app/secrets'
 #end
 
-# simplecov, rcov, coderails の３東リの書式のレポートを生成する。
+# simplecov, rcov, coderails の３通りの書式のレポートを生成する。
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
   SimpleCov::Formatter::HTMLFormatter,
   SimpleCov::Formatter::RcovFormatter,
