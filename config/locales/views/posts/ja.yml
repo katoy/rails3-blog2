@@ -1,0 +1,15 @@
+ja:
+  views:
+    posts:
+      index:
+        label:
+          head: "投稿一覧"
+          name: "投稿者"
+          title: "タイトル"
+          tags: "タグ..."
+          num_comments: "コメント数"
+          content: "本文"
+          show: "表示"
+          edit: "編集"
+          destroy: "削除"
+          new_post: "新規投稿する"

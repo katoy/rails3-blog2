@@ -4,7 +4,8 @@
 [![Coverage Status](https://coveralls.io/repos/katoy/rails3-blog2/badge.png)](https://coveralls.io/r/katoy/rails3-blog2)
 
 
-[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた結果です。
+[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)  を行なってみた結果です。  
+[Rails3.2 でWebアプリケーションを作成](http://merrill777.blog135.fc2.com/)  
 
 追加事項
 =======

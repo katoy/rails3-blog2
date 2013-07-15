@@ -1,15 +1,12 @@
-<h1>Listing posts</h1>
+<h1><%= t(:head, scope: :"views.posts.index.label") %></h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>tags ...</th>
-    <th>#comments</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%= t(:name, scope: :"views.posts.index.label") %></th>
+    <th><%= t(:title, scope: :"views.posts.index.label") %></th>
+    <th><%= t(:tags, scope: :"views.posts.index.label") %></th>
+    <th><%= t(:num_comments, scope: :"views.posts.index.label") %></th>
+    <th><%= t(:content, scope: :"views.posts.index.label") %></th>
   </tr>
 
 <% @posts.each do |post| %>
@@ -19,13 +16,12 @@
     <td><%= getTagnames(post, :max => 2).join(", ") %></td>
     <td align="right"><%= post.comments.size %></td>
     <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to t(:show, :scope => 'helpers.label'), post %></td>
+    <td><%= link_to t(:edit, :scope => 'helpers.label'), edit_post_path(post) %></td>
+    <td><%= link_to t(:destroy, :scope => 'helpers.label'), post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Post', new_post_path %>
+<%= link_to t(:new_post, scope: :"views.posts.index.label"), new_post_path %>
